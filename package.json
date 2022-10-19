@@ -1,0 +1,26 @@
+{
+  "name": "messenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server/api.js",
+    "dev": "nodemon src/server/api.js",
+    "lint:fix":"eslint ./src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.5.3"
+  }
+}
