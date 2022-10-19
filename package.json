@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server/api.js",
-    "dev": "nodemon src/server/api.js",
-    "lint:fix":"eslint ./src --fix",
+    "start": "node src/server/sockets.js",
+    "dev": "nodemon src/server/sockets.js",
+    "lint:fix": "eslint ./src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "pg": "^8.8.0",
     "socket.io": "^4.5.3"
   }
 }
