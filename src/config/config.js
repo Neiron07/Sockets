@@ -1,6 +1,6 @@
 import * as dotenv from 'dotenv';
 import path from 'path';
-dotenv.config({ path: path.join(process.cwd(), 'config', '.env') });
+dotenv.config({ path: path.join(process.cwd(), 'config', 'dev.env') });
 
 const config = {
   api: {

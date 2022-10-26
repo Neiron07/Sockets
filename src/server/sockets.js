@@ -36,10 +36,12 @@ socketio.sockets.on('message', (data) => {
 
 async function startApi(){
   try {
-    app.listen(config.api.PORT_API, ()=> console.log('Server started'));   
+    app.listen(config.api.PORT_API, ()=> console.log(`Server started on http://localhost:${config.api.PORT_API}`));   
+    console.log(config.database.HOST_DB);
   } catch (e) {
     console.log(e);
   }
 }
 
 startApi();
+export default startApi;
